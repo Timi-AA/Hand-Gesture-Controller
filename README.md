@@ -37,6 +37,8 @@ pyautogui -system media key control
 
 ## Getting started
 
-- pip install opencv-python mediapipe pyautogui
-- python hand_gesture_controller.py
+pip install opencv-python mediapipe pyautogui
+
+python hand_gesture_controller.py
+
 The model file (~5 MB) downloads automatically on first launch. Press Q or ESC to exit.
