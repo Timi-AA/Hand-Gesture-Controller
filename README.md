@@ -5,8 +5,8 @@ Built with Python, OpenCV, and MediaPipe's hand landmark detection, the system t
 # Gestures
 GestureActionBehaviour✋ Open PalmPlay / PauseFires once✊ Closed FistMute / UnmuteFires once✌️ Peace SignVolume UpRepeats while held👍 Thumbs UpVolume DownRepeats while held☝️ One Finger UpNext TrackFires once
 
-#How it works
-MediaPipe detects 21 landmark coordinates on your hand in real time. A custom classifier analyses finger extension and curl depth to identify which gesture you're making. A smoothing buffer requires the gesture to be consistent across multiple frames before triggering, eliminating false positives. Volume gestures repeat automatically while held so you don't have to reposition your hand.
+# How it works
+MediaPipe detects 21 landmark coordinates on your hand in real time. A custom classifier analyzes finger extension and curl depth to identify which gesture you're making. A smoothing buffer requires the gesture to be consistent across multiple frames before triggering, eliminating false positives. Volume gestures repeat automatically while held, so you don't have to reposition your hand.
 
 # Features
 
@@ -22,12 +22,13 @@ Auto-downloads the MediaPipe model on first run
 # Stack
 
 Python 3.8+
-OpenCV — webcam capture and frame rendering
-MediaPipe Tasks API — hand landmark detection
-pyautogui — system media key control
+OpenCV - webcam capture and frame rendering
+MediaPipe Tasks API - hand landmark detection
+pyautogui -system media key control
 
 
 # Getting started
-bashpip install opencv-python mediapipe pyautogui
+bash
+pip install opencv-python mediapipe pyautogui
 python hand_gesture_controller.py
 The model file (~5 MB) downloads automatically on first launch. Press Q or ESC to exit.
